@@ -1,18 +1,29 @@
 .App {
-  text-align: center;
+  font-family: 'Arial', sans-serif;
+  display: flex; /* Use flexbox layout */
+  height: 100vh; /* Set the height to the full viewport height */
 }
+
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
+.partition {
+  display: flex; /* Use flexbox layout */
+  flex: 1; /* Allow the partition to grow and fill the available space */
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+/* Styles for the content area */
+.App-content {
+  /* padding: 20px; Padding */
+  flex: 1; /* Allow the content area to grow and fill the available space */
+  margin-left: 250px;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
